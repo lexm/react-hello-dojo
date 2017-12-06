@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1 id="head1"></h1>
+        <h2 id="head2"></h2>
+        <ul>
+            <li id="line1"></li>
+            <li id="line2"></li>
+            <li id="line3"></li>
+            <li id="line4"></li>
+        </ul>
+    </div>
+    <script src="./node_modules/react/umd/react.development.js"></script>
+    <script src="./node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script>
+        ReactDOM.render('Hello Dojo', document.getElementById('head1'));
+        ReactDOM.render('Things I need to do:', document.getElementById('head2'));
+        ReactDOM.render('Learn React', document.getElementById('line1'));
+        ReactDOM.render('Climb Mt. Everest', document.getElementById('line2'));
+        ReactDOM.render('Run a marathon', document.getElementById('line3'));
+        ReactDOM.render('Feed the dogs', document.getElementById('line4'));
+    </script>
+</body>
+</html>
